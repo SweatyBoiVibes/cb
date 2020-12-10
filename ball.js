@@ -2,7 +2,15 @@ class Ball {
 
 constructor(x, y){
 
-this.body = Bodies.circle(x, y, 20)
+  var a = {
+    
+   restitution: 0.5,
+    density: 0.2
+    
+  }
+  
+  
+this.body = Bodies.circle(x, y, 20, a)
 World.add(world, this.body)
 }
 
