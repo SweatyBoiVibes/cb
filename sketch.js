@@ -33,7 +33,8 @@ isStatic: true,
    Right = Bodies.rectangle(720, 585, 20, 100, hi)
    World.add(world, Right)
 
-   
+     Base = Bodies.rectangle(610, 630, 200, 20, hi)
+   World.add(world, Base)
 
    b1 = new Ball (100,100)
 
@@ -51,7 +52,7 @@ function draw() {
   rect (ground. position.x, ground. position.y, 800, 30)
 rect(LEFT.position.x,LEFT.position.y, 20, 100)
 rect(Right.position.x,Right.position.y, 20, 100)
-
+rect(Base.position.x,Base.position.y, 20, 100)
 
 
 b1.display()
